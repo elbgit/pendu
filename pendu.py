@@ -28,7 +28,8 @@ except KeyError:
 
 
 mots = ["cheval", "oiseau", "chameau", "orange", "banane", "fraise", "hibou",
-"genou", "maman", "cirque", "quand"]
+"genou", "maman", "cirque", "quand", "armoire", "nombril", "coussin", "frigo",
+"cahier", "piscine"]
 
     
 # On affiche le mot à deviner et le nombre de chances restant, les lettres sont
@@ -85,8 +86,8 @@ while True:
             compteur += 1
         if penalite != 0:
             print("mauvais choix")
-        chances += - penalite
-        print("Il ne reste plus que {} chance(s).".format(chances))
+            chances += - penalite
+            print("Il ne reste plus que {} chance(s).".format(chances))
     # Si le nombre de chances tombe à 0, le jeu s'arrête.
         if chances == 0:
             gain = False
